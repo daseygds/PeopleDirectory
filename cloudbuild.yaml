@@ -10,3 +10,6 @@ steps:
 
 images:
   - 'us-central1-docker.pkg.dev/argon-key-479411-p0/person-repo/personinfo'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
