@@ -13,7 +13,7 @@
 	</parent>
 
 	<groupId>io.personInfo</groupId>
-	<artifactId>PersonInfo</artifactId>
+	<artifactId>personInfo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PersonInfo</name>
 
