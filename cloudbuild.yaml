@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/mvn'
+    args: ['clean', 'package', '-DskipTests']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/argon-key-479411-p0/person-repo/personinfo', '.']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/argon-key-479411-p0/person-repo/personinfo']
+
+images:
+  - 'us-central1-docker.pkg.dev/argon-key-479411-p0/person-repo/personinfo'
